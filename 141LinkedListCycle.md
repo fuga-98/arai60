@@ -6,12 +6,12 @@ LeetCodeが初めてだったため、入力の仕方と問題文の読解でつ
 
 ```
 class Solution:
-    def hasCycle(self,head:Optional[ListNode]):
-        reached_set = set()
+    def hasCycle(self, head: Optional[ListNode]):
+        reached = set()
         while head:
-            if head in reached_set:
+            if head in reached:
                 return True
-            reached_set.add(head)
+            reached.add(head)
             head = head.next
         return False
 ```
@@ -101,15 +101,20 @@ class Solution:
             node = node.next
         return False
 
+
 class SimpleSet:
+
     def __init__(self,capacity=16):
         self.capacity = capacity
         self.hash_list = [None] * capacity
+
     def _hash(self,x) -> int:
         return hash(x) % self.capacity
+
     def search(self,x) -> bool:
         index = self._hash(x)
         return self.hash_list[index] == x
+
     def add(self,x)　-> None:
         index = self._hash(x)
         self.hash_list[index] = x
