@@ -4,7 +4,7 @@
 
 LeetCodeが初めてだったため、入力の仕方と問題文の読解でつまずいていた。
 
-```
+```python
 class Solution:
     def hasCycle(self, head: Optional[ListNode]):
         reached = set()
@@ -40,7 +40,7 @@ https://github.com/mura0086/arai60/pull/5
 
 ### 解答
 
-```
+```Python
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         visited = set()
@@ -57,7 +57,7 @@ class Solution:
 
 ### 3回連続で再現できるようになる
 
-```
+```Python
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         visited = set()
@@ -89,7 +89,7 @@ Set
 
 衝突、配列のリサイズ、エラーハンドリングは実装しない。
 
-```
+```Python
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         visited = SimpleSet()
