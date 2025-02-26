@@ -135,7 +135,7 @@ class Solution:
         result = []
         while candidate and len(result) < k:
             _, i, j = heappop(candidate)
-            result.append((nums1[i], nums2[j]))
+            result.append([nums1[i], nums2[j]])
             add_candidate(i, j + 1)
         return result
 ```
