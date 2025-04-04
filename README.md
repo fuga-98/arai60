@@ -1,7 +1,3 @@
-以下に各問題のリンクを示します。リンクは LeetCode の公式ページ（英語）へのリンクになっています。
-
----
-
 ### LinkedList  
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)  
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)  
@@ -108,7 +104,4 @@
 - [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)  
 - [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 
----
 
-上記リンクから各問題の詳細な説明や解答例を確認することができます。  
-（※ 一部問題は LeetCode Premium のみアクセス可能な場合があります。）
